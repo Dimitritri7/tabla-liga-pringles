@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Liga de Pringles</title>
+    <style>
+        /* Fondo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6b68);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        /* Contenedor de la tabla */
+        .tabla-contenedor {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #ff467e;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe4ec; /* Color claro alterno */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #ffe9f0; /* Efecto hover */
+            cursor: pointer;
+        }
+
+        /* Estilo del título */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Tabla de Posiciones - Liga de Pringles</h1>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Equipo</th>
+                        <th>Puntos</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>Dif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregan las filas dinámicamente -->
+                    <tr>
+                        <td>1</td>
+                        <td>Equipo A</td>
+                        <td>25</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Equipo B</td>
+                        <td>22</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- Más filas aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
